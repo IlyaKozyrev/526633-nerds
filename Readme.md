@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ilya Kozyrev](https://up.htmlacademy.ru/htmlcss/20/user/526633).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
 
 ---
 
