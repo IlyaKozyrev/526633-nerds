@@ -5,8 +5,136 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="http://placehold.it/150x100" alt="Логотип дизайн-студии Нердс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="store.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="bag">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Дизайн-студия Нердс</h1>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+          <li class="features-item">
+            <h3>Долго, дорого, скрупулезно.</h3>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          </li>
+          <li class="features-item">
+            <h3>Любим математику как никто другой.</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          </li>
+          <li class="features-item">
+            <h3>Только ночь, только хардкор.</h3>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          </li>
+        </ul>
+        <a class="button" href="studio.html">Узнать больше</a>
+      </section>
+      <section class="products">
+        <h2 class="visually-hidden">Продукты</h2>
+        <ul class="products-list">
+          <li class="products-item">
+            <img class="products-image" src="http://placehold.it/150x100" alt="Веб-сайты">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button" href="order.html">Заказать</a>
+          </li>
+          <li class="products-item">
+            <img class="products-image" src="http://placehold.it/150x100" alt="Приложения">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play!</p>
+            <a class="button" href="order.html">Заказать</a>
+          </li>
+          <li class="products-item">
+            <img class="products-image" src="http://placehold.it/150x100" alt="Презентации">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button" href="order.html">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <div class="description">
+        <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3>Выполняем заказы на разработку:</h3>
+        <ul class="description-products">
+          <li class="description-products-item">Веб-сайтов любой сложности</li>
+          <li class="description-products-item">Мобильных приложений для iOS и Android</li>
+          <li class="description-products-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      <div class="advantages">
+        <img class="advantages-logo" src="http://placehold.it/150x100" alt="Логотип дизайн-студии Нердс">
+        <span>С 2004 года любим точность во всем:</span>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <b>146<sup>%</sup></b>
+            <span>Уровень самоотдачи</span>
+          </li>
+          <li class="advantages-item">
+            <b>100<sup>%</sup></b>
+            <span>Соблюдение сроков</span>
+          </li>
+          <li class="advantages-item">
+            <b>50<sup>%</sup></b>
+            <span>Минимальная предоплата</span>
+          </li>
+        </ul>
+      </div>
+      <section class="portfolio">
+        <h2>Выполненные заказы</h2>
+        <ul class="portfolio-list">
+          <li class="portfolio-item">
+            <a class="portfolio-item-logo" href="#">
+              <img src="http://placehold.it/150x100" alt="HTML Академия">
+            </a>
+          </li>
+          <li class="portfolio-item">
+            <a class="portfolio-item-logo" href="#">
+              <img src="http://placehold.it/150x100" alt="Барбершоп Бородинский">
+            </a>
+          </li>
+          <li class="portfolio-item">
+            <a class="portfolio-item-logo" href="#">
+              <img src="http://placehold.it/150x100" alt="Пинк">
+            </a>
+          </li>
+          <li class="portfolio-item">
+            <a class="portfolio-item-logo" href="#">
+              <img src="http://placehold.it/150x100" alt="Мишка">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="map"></div> <!--Здесь будет карта-->
+      <section class="footer-contacts">
+        <span>NЁRDS DESIGN STUDIO</span>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="button" href="#">Напишите нам</a>
+      </section>
+      <!--Здесь будет форма обратной связи-->
+      <div class="footer-social">
+        <ul>
+        <a class="social-button" href="#">Вконтакте</a>
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Инстаграм</a>
+      </ul>
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+    </footer>
   </body>
 </html>
