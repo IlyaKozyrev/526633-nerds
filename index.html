@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -28,17 +31,17 @@
       <div class="slider">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="slider-list">
-          <li class="slider-item">
+          <li class="slider-item slider-item-1">
             <h3>Долго, дорого, скрупулезно.</h3>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <a class="learn-more-btn" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item">
+          <li class="slider-item slider-item-2">
             <h3>Любим математику как никто другой.</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="learn-more-btn" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item">
+          <li class="slider-item slider-item-3">
             <h3>Только ночь, только хардкор.</h3>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="learn-more-btn" href="#">Узнать больше</a>
@@ -71,19 +74,19 @@
             <!--Картинки делаем background-image в css-->
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button" href="order.html">Заказать</a>
+            <a class="products-btn btn-red" href="order.html">Заказать</a>
           </li>
           <li class="products-item">
             <!--Картинки делаем background-image в css-->
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play!</p>
-            <a class="button" href="order.html">Заказать</a>
+            <a class="products-btn btn-green" href="order.html">Заказать</a>
           </li>
           <li class="products-item">
             <!--Картинки делаем background-image в css-->
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button" href="order.html">Заказать</a>
+            <a class="products-btn btn-gold" href="order.html">Заказать</a>
           </li>
         </ul>
       </section>
@@ -116,7 +119,7 @@
         </ul>
       </div>
       <section class="portfolio">
-        <h2>Выполненные заказы</h2>
+        <h2 class="visually-hidden">Выполненные заказы</h2>
         <ul class="portfolio-list">
           <li class="portfolio-item">
             <a class="portfolio-item-logo" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -144,8 +147,9 @@
     <footer class="main-footer">
       <div class="map">
         <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты:</h2>
           <span>NЁRDS DESIGN STUDIO</span>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a class="write-us-btn" href="#">Напишите нам</a>
         </section>
@@ -153,12 +157,12 @@
       </div>
       <div class="footer-social">
         <ul class="footer-social-list">
-        <li class="footer-social-item"><a class="social-button" href="#">Вконтакте</a></li>
-        <li class="footer-social-item"><a class="social-button" href="#">Фейсбук</a></li>
-        <li class="footer-social-item"><a class="social-button" href="#">Инстаграм</a></li>
+        <li class="footer-social-item"><a class="social-btn" href="#">Вконтакте</a></li>
+        <li class="footer-social-item"><a class="social-btn" href="#">Фейсбук</a></li>
+        <li class="footer-social-item"><a class="social-btn" href="#">Инстаграм</a></li>
       </ul>
       <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
     <div class="popup">
@@ -167,11 +171,11 @@
         <h2>Напишите нам</h2>
         <p class="form-name">
           <label for="user-name">Ваше имя:</label>
-          <input type="text" name="user-name" id="user-name" placeholder="Представтесь, пожалуйста">
+          <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
         </p>
         <p class="form-email">
           <label for="user-email">Ваш e-mail:</label>
-          <input type="email" name="user-email" id="user-email" placeholder="Для отправки ответа">
+          <input type="email" name="user-email" id="user-email" placeholder="email@example.com">
         </p>
         <p class="form-letter">
           <label for="letter">Текст письма:</label>

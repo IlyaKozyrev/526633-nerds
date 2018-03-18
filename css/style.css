@@ -1,0 +1,543 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:focus {
+  color: #a6a6a6;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-item-1 {
+  background-image: url(../img/slide1.png);
+  background-repeat: no-repeat;
+}
+
+.slider-item-2 {
+  background-image: url(../img/slide2.png);
+  background-repeat: no-repeat;
+}
+
+.slider-item-3 {
+  background-image: url(../img/slide3.png);
+  background-repeat: no-repeat;
+}
+
+.slider-item h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.learn-more-btn {
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+}
+
+.learn-more-btn:hover {
+  background-color: #e74246;
+}
+
+.learn-more-btn:focus {
+  color: #e1686b;
+
+  background-color: #d7373b;
+}
+
+/* Уточнить, как стилизовать контролы слайдера */
+.slider-switches {
+  list-style: none;
+  background-color: #eeeeee;
+}
+
+.products-list {
+  list-style: none;
+}
+
+.products-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.products-btn {
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn-red {
+  background-color: #fb565a;
+}
+
+.btn-red:hover {
+  background-color: #e74246;
+}
+
+.btn-red:focus {
+  color: #e37376;
+
+  background-color: #d7373b;
+}
+
+.btn-green {
+  background-color: #00ca74;
+}
+
+.btn-green:hover {
+  background-color: #00bc6c;
+}
+
+.btn-green:focus {
+  color: #48c28e;
+
+  background-color: #00aa62;
+}
+
+.btn-gold {
+  background-color: #efc84a;
+}
+
+.btn-gold:hover {
+  background-color: #eab534;
+}
+
+.btn-gold:focus {
+  color: #edc265;
+
+  background-color: #e5a722;
+}
+
+.description b {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #000000;
+}
+
+.description h3 {
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages p {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item b {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10px;
+  color: #000000;
+}
+
+.advantages-item span {
+  line-height: 18px;
+}
+
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-item-logo {
+  filter: alpha(Opacity=20); /* Полупрозрачность для IE */
+  opacity: 0.20; /* Полупрозрачность для других браузеров */
+}
+
+.portfolio-item-logo:hover {
+  filter: alpha(Opacity=100); /* Полупрозрачность для IE */
+  opacity: 1.0; /* Полупрозрачность для других браузеров */
+}
+
+.portfolio-item-logo:focus {
+  filter: alpha(Opacity=10); /* Полупрозрачность для IE */
+  opacity: 0.1; /* Полупрозрачность для других браузеров */
+}
+
+.footer-contacts span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer-contacts p {
+  line-height: 18px;
+  color: #666666;
+}
+
+.write-us-btn {
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a
+}
+
+.write-us-btn:hover {
+  background-color: #e74246;
+}
+
+.write-us-btn:focus {
+  color: #e37376;
+
+  background-color: #d7373b;
+}
+
+/* Учтонить, как сверстать ссылки на соц сети */
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social b {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer-social p {
+  line-height: 22px;
+  color: #444444;
+}
+
+/* Учтонить, как сверстать кнопку закрыть в форме обратной связи */
+
+.write-us h2 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #000000;
+}
+
+.write-us label {
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}
+
+.write-us input,
+.write-us textarea {
+  font: inherit;
+  line-height: 18px;
+
+  background-color: transparent;
+
+  border: 2px;
+  border-style: solid;
+  border-color: #d7dcde;
+  border-radius: 2px;
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+  color: #000000;
+
+  border-color: #000000;
+}
+
+.write-us input:invalid,
+.write-us textarea:invalid {
+  color: #e74246;
+
+  border-color: #e74246;
+}
+
+/* Учтонить, как задать цвет плейсхолдера и текстария серым в соответствии с макетом */
+
+.submit-btn {
+  font: inherit;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+}
+
+.submit-btn:hover {
+  background-color: #e74246;
+}
+
+.submit-btn:focus {
+  color: #e37376;
+
+  background-color: #d7373b;
+}
+
+/* Стили для catalog.html */
+
+.page-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.price,
+.grid,
+.features {
+  border: none;
+}
+
+.price legend,
+.grid legend,
+.features legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price-control-min,
+.price-control-max {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.price-min,
+.price-max {
+    font: inherit;
+    line-height: 22px;
+
+    background-color: #eeeeee;
+
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.radio-grid-label,
+.checkbox-features-label {
+  line-height: 20px;
+}
+
+.radio-grid-control:hover + label,
+.checkbox-features-control:hover + label {
+  color: #000000;
+}
+
+.radio-grid-control:disabled + label,
+.checkbox-features-control:disabled + label {
+  filter: alpha(Opacity=30); /* Полупрозрачность для IE */
+  opacity: 0.30; /* Полупрозрачность для других браузеров */
+}
+
+.filters-submit-btn {
+  font: inherit;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+
+  border: none;
+  border-radius: 3px;
+}
+
+.filters-submit-btn:hover {
+  background-color: #dfdfdf;
+}
+
+.filters-submit-btn:focus {
+  filter: alpha(Opacity=30); /* Полупрозрачность для IE */
+  opacity: 0.30; /* Полупрозрачность для других браузеров */
+
+  background-color: #d5d5d5; /* Уточнить правильный ли цвет при нажатии на кнопку */
+}
+
+/* Сортировка товаров по цене, типу, названию и т.д. */
+
+.sort-navigation p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sort-options {
+  list-style: none;
+}
+
+.sort-btn a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  filter: alpha(Opacity=30); /* Полупрозрачность для IE */
+  opacity: 0.30; /* Полупрозрачность для других браузеров */
+  text-transform: uppercase;
+}
+
+.sort-btn a:hover {
+  filter: alpha(Opacity=60); /* Полупрозрачность для IE */
+  opacity: 0.60; /* Полупрозрачность для других браузеров */
+}
+
+.sort-btn a:focus,
+.sort-btn-current a {
+  filter: alpha(Opacity=100); /* Полупрозрачность для IE */
+  opacity: 1.00; /* Полупрозрачность для других браузеров */
+}
+
+/* Главный раздел каталога */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #eeeeee;
+}
+
+.catalog-item-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-item-description {
+  line-height: 18px;
+  color: #666666;
+}
+
+.btn-price {
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+
+  border-radius: 3px;
+}
+
+.btn-price:hover {
+  background-color: #e74246;
+}
+
+.btn-price:focus {
+  background-color: #d7373b;
+}
+
+/* Нумерация страниц каталога */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #eeeeee;
+
+  border: 3px;
+  border-color: #eeeeee;
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+  border-color: #dfdfdf;
+}
+
+.pagination-item a:focus {
+  filter: alpha(Opacity=30); /* Полупрозрачность для IE */
+  opacity: 0.30; /* Полупрозрачность для других браузеров */
+
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+  font-weight: 500;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+
+  border: 3px;
+  border-color: #dbdbdb;
+  border-style: solid;
+  border-radius: 3px;
+}
