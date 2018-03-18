@@ -18,7 +18,7 @@
         </ul>
         <ul class="user-navigation">
           <li class="bag">
-            <a class="bag" href="bag.html">Корзина</a>
+            <a class="bag-btn" href="bag.html">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -45,11 +45,11 @@
           </fieldset>
           <fieldset class="grid">
             <legend>Сетка:</legend>
-            <input class="radio-grid-control" type="radio" name="adaptive" id="radio-control-1" checked>
+            <input class="radio-grid-control" type="radio" name="grid-type" value="adaptive" id="radio-control-1" checked>
             <label class="radio-grid-label" for="radio-control-1">Адаптивная</label>
-            <input class="radio-grid-control" type="radio" name="fix" id="radio-control-2" disabled>
+            <input class="radio-grid-control" type="radio" name="grid-type" value="fix" id="radio-control-2" disabled>
             <label class="radio-grid-label" for="radio-control-2">Фиксированная</label>
-            <input class="radio-grid-control" type="radio" name="flex" id="radio-control-3">
+            <input class="radio-grid-control" type="radio" name="grid-type" value="flex" id="radio-control-3">
             <label class="radio-grid-label" for="radio-control-3">Резиновая</label>
           </fieldset>
           <fieldset class="features">
@@ -180,42 +180,42 @@
     </main>
     <footer class="main-footer">
       <div class="map">
+        <section class="footer-contacts">
+          <span>NЁRDS DESIGN STUDIO</span>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="write-us-btn" href="#">Напишите нам</a>
+        </section>
         <img src="img/map.jpg" width="1200" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </div>
-      <section class="footer-contacts">
-        <span>NЁRDS DESIGN STUDIO</span>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="button" href="#">Напишите нам</a>
-      </section>
-      <div class="popup">
-        <button class="close-button" type="button">Закрыть</button>
-        <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-          <h2>Напишите нам</h2>
-          <p class="form-name">
-            <label for="user-name">Ваше имя:</label>
-            <input type="text" name="user-name" id="user-name" placeholder="Представтесь, пожалуйста">
-          </p>
-          <p class="form-email">
-            <label for="user-email">Ваш e-mail:</label>
-            <input type="email" name="user-email" id="user-email" placeholder="Для отправки ответа">
-          </p>
-          <p class="form-letter">
-            <label for="letter">Текст письма:</label>
-            <textarea name="letter" id="letter" rows="5">В свободной форме</textarea>
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
-      </div>
       <div class="footer-social">
-        <ul>
-        <a class="social-button" href="#">Вконтакте</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Инстаграм</a>
+        <ul class="footer-social-list">
+        <li class="footer-social-item"><a class="social-button" href="#">Вконтакте</a></li>
+        <li class="footer-social-item"><a class="social-button" href="#">Фейсбук</a></li>
+        <li class="footer-social-item"><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
+    <div class="popup">
+      <button class="close-button" type="button">Закрыть</button>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <h2>Напишите нам</h2>
+        <p class="form-name">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="user-name" id="user-name" placeholder="Представтесь, пожалуйста">
+        </p>
+        <p class="form-email">
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="user-email" id="user-email" placeholder="Для отправки ответа">
+        </p>
+        <p class="form-letter">
+          <label for="letter">Текст письма:</label>
+          <textarea name="letter" id="letter" rows="5">В свободной форме</textarea>
+        </p>
+        <button class="submit-btn" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
