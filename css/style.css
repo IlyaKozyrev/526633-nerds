@@ -566,11 +566,10 @@ input[type="radio"].visually-hidden {
   width: auto;
   min-height: 100%;
   height: auto;
-
-  z-index: -1;
 }
 
 .footer-contacts {
+  position: relative;
   width: 219px;
   padding: 54px 47px 50px;
   background-color: #ffffff;
@@ -796,10 +795,6 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 
   animation: bounce 0.8s;
 }
@@ -807,19 +802,19 @@ input[type="radio"].visually-hidden {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, -2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, 10px);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -30px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 }
 
