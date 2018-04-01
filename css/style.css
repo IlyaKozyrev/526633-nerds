@@ -1,8 +1,3 @@
-/*
-background: rgba(255, 45, 82, 0.2);
-box-shadow: 0 0 0 3px rgb(255, 45, 82);
-*/
-
 body {
   min-width: 1200px;
   margin: 0;
@@ -295,7 +290,9 @@ input[type="radio"].visually-hidden {
 
 .products-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
   padding-left: 0;
   padding-right: 60px;
 
@@ -313,6 +310,10 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid #eeeeee;
 }
 
+.products-item {
+  margin-bottom: 16px;
+}
+
 .products-item-header {
   margin-bottom: 16px;
 
@@ -324,6 +325,7 @@ input[type="radio"].visually-hidden {
 }
 
 .products-item p {
+  width: 300px;
   margin-bottom: 32px;
 }
 
@@ -379,7 +381,7 @@ input[type="radio"].visually-hidden {
 
 .flex-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .description {
@@ -476,19 +478,18 @@ input[type="radio"].visually-hidden {
 }
 
 .portfolio {
-  margin-top: 77px;
+  margin-top: 73px;
   margin-bottom: 80px;
 }
 
 .portfolio-list {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 48px;
-  padding-bottom: 34px;
+
   list-style: none;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -497,9 +498,10 @@ input[type="radio"].visually-hidden {
 .portfolio-item {
   display: flex;
   position: relative;
-  width: 260px;
   justify-content: center;
   align-items: center;
+  height: 180px;
+  width: 260px;
 }
 
 .portfolio-item::after {
@@ -507,8 +509,10 @@ input[type="radio"].visually-hidden {
   content: " ";
   width: 2px;
   height: 48px;
-  top: 16px;
-  right: -20px;
+  top: 50%;
+  left: 278px;
+  transform: translateY(-50%);
+
   background-color: #eeeeee;
 
 }
@@ -518,40 +522,60 @@ input[type="radio"].visually-hidden {
 }
 
 .portfolio-item-logo {
-  opacity: 0.20; /* Полупрозрачность для других браузеров */
+  opacity: 0.20;
 }
 
 .portfolio-item-logo:hover {
-  opacity: 1.0; /* Полупрозрачность для других браузеров */
+  opacity: 1.0;
 }
 
 .portfolio-item-logo:focus {
-  opacity: 0.1; /* Полупрозрачность для других браузеров */
+  opacity: 0.1;
 }
 
 .map {
   width: 100%;
   position: relative;
-  margin-bottom: 69px;
+  overflow: hidden;
+  padding: 54px 0;
+  margin-bottom: 67px;
 }
 
 .map img {
-    display: block;
-    width: 1440px;
-    height: 416px;
-    margin: 0 auto;
-    background-color: #e9e5dc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  max-width: none;
+  width: auto;
+  min-height: 100%;
+  height: auto;
+  z-index: -5;
+
+  background-color: #e9e5dc;
+}
+
+.interactive-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  max-width: none;
+  width: auto;
+  min-height: 100%;
+  height: auto;
+
+  z-index: -1;
 }
 
 .footer-contacts {
-  position: absolute;
-  top: 54px;
-  left: 150px;
   width: 219px;
-  padding: 50px;
-  padding-bottom: 47px;
-
+  padding: 54px 47px 50px;
   background-color: #ffffff;
+
+  z-index: 5;
 }
 
 .footer-contacts span {
@@ -567,22 +591,29 @@ input[type="radio"].visually-hidden {
   color: #666666;
 }
 
+.phone-number {
+  margin-bottom: 38px;
+}
+
 .footer-contacts-button {
   width: 219px;
 }
 
-/* Учтонить, как сверстать ссылки на соц сети */
 .footer-social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-bottom: 70px;
 }
 
 .footer-social-list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  padding-right: 140px;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 260px;
@@ -598,6 +629,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social p {
+  margin: 13px 0 0 0;
   line-height: 22px;
   color: #444444;
 }
@@ -631,14 +663,14 @@ input[type="radio"].visually-hidden {
   padding-top: 6px;
   margin-left: 140px;
 }
-/* Учтонить, как сверстать кнопку закрыть в форме обратной связи */
 
 .popup {
+  display: none;
   position: fixed;
-  bottom: 174px;
   left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 760px;
-  margin-left: -480px;
   padding: 68px 100px;
   padding-bottom: 84px;
 
@@ -672,10 +704,10 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-.popup-form h2 {
+.popup h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 41px;
+  padding-bottom: 41px;
 
   font-size: 45px;
   font-weight: 500;
@@ -690,14 +722,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.popup-form p {
-  margin: 0;
-  padding: 0;
-}
-
 .popup-form-item {
   width: 360px;
   margin: 0;
+  padding: 0;
 }
 
 .popup-form label {
@@ -736,6 +764,7 @@ input[type="radio"].visually-hidden {
 
 .popup-form textarea {
   width: 760px;
+  height: 118px;
   margin-bottom: 0;
   padding: 10px 11px;
   padding-bottom: 56px;
@@ -761,10 +790,37 @@ input[type="radio"].visually-hidden {
   border-color: #e74246;
 }
 
-/* Учтонить, как задать цвет плейсхолдера и текстария серым в соответствии с макетом */
-
 .popup-form-button {
   width: 260px;
+}
+
+.modal-show {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: bounce 0.8s;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Стили для catalog.html */
@@ -1065,7 +1121,7 @@ input[type="radio"].visually-hidden {
 
 .radio-grid-control:disabled + label,
 .checkbox-features-control:disabled + label {
-  opacity: 0.30; /* Полупрозрачность для других браузеров */
+  opacity: 0.30;
 }
 
 .filters-submit-button {
@@ -1090,7 +1146,6 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-/* Сортировка товаров по цене, типу, названию и т.д. */
 .catalog-main {
   width: 760px;
   padding: 0;
@@ -1130,18 +1185,17 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  opacity: 0.30; /* Полупрозрачность для других браузеров */
+  opacity: 0.30;
   text-transform: uppercase;
 }
 
 .sort-btn a:hover {
-  filter: alpha(Opacity=60); /* Полупрозрачность для IE */
-  opacity: 0.60; /* Полупрозрачность для других браузеров */
+  opacity: 0.60;
 }
 
 .sort-btn a:focus,
 .sort-btn-current a {
-  opacity: 1.00; /* Полупрозрачность для других браузеров */
+  opacity: 1.00;
 }
 
 /* Главный раздел каталога */
@@ -1173,10 +1227,10 @@ input[type="radio"].visually-hidden {
 .catalog-item:hover .catalog-item-info {
   display: block;
   position: absolute;
-  top: 385px;
+  bottom: 0;
   left: 0;
   width: 360px;
-  height: 231px;
+  min-height: 231px;
 
   text-align: center;
 
@@ -1197,8 +1251,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-description {
-  width: 360px;
-
+  width: 200px;
+  padding: 0 80px;
   line-height: 18px;
   color: #666666;
 }
@@ -1206,6 +1260,7 @@ input[type="radio"].visually-hidden {
 .catalog-item-button {
   width: 200px;
   margin-left: 80px;
+  margin-bottom: 43px;
 }
 
 .catalog-item-header {
@@ -1242,6 +1297,7 @@ input[type="radio"].visually-hidden {
   width: 472px;
   margin: 0;
   padding: 0;
+  padding-top: 24px;
   margin-bottom: 60px;
 
   list-style: none;
@@ -1269,7 +1325,7 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
-.pagination-item:nth-child(4) a {
+.pagination-item:last-child a {
   width: 233px;
   height: auto;
   margin-right: 0;
