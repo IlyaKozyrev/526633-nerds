@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -12,7 +12,7 @@
     <header class="main-header">
       <nav class="main-navigation container">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="160" height="65" alt="Логотип дизайн-студии Нердс">
+          <img src="img/logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нердс">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
@@ -31,8 +31,9 @@
     <main class="main-content">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
 
-      <div class="flex-container">
-        <div class="filters">
+      <div class="container">
+        <div class="flex-container">
+          <div class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form action="https://echo.htmlacademy.ru" method="get" class="filter-form">
             <fieldset class="price">
@@ -97,7 +98,7 @@
           </form>
         </div>
 
-        <section class="catalog-main">
+          <section class="catalog-main">
           <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
 
           <div class="sort-navigation">
@@ -114,14 +115,14 @@
               </li>
               <li class="sort-btn sort-btn-current">
                 <a href="#">
+                  <p class="sort-btn-down"></p>
                   <h3 class="visually-hidden">По убыванию</h3>
-                  <img src="img/icon-dir-down.svg" width="11" height="10" alt="По убыванию">
                 </a>
               </li>
               <li class="sort-btn">
                 <a href="#">
+                  <p class="sort-btn-up"></p>
                   <h3 class="visually-hidden">По возрастанию</h3>
-                  <img src="img/icon-dir-up.svg" width="11" height="10" alt="По возрастанию">
                 </a>
               </li>
             </ul>
@@ -130,11 +131,7 @@
           <div class="catalog">
             <ul class="catalog-list">
               <li class="catalog-item">
-                <div class="catalog-item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                <div class="catalog-item-header"></div>
                 <p class="catalog-item-img">
                   <img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов Sedona">
                 </p>
@@ -147,11 +144,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                <div class="catalog-item-header"></div>
                 <p class="catalog-item-img">
                   <img src="img/img-pink.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android Pink App">
                 </p>
@@ -164,11 +157,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                <div class="catalog-item-header"></div>
                 <p class="catalog-item-img">
                   <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт салона красоты Barbershop Borodinski">
                 </p>
@@ -181,11 +170,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                <div class="catalog-item-header"></div>
                 <p class="catalog-item-img">
                   <img src="img/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек Mishka">
                 </p>
@@ -198,11 +183,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                <div class="catalog-item-header"></div>
                 <p class="catalog-item-img">
                   <img src="img/img-aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации A Plus">
                 </p>
@@ -215,11 +196,7 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                <div class="catalog-item-header"></div>
                 <p class="catalog-item-img">
                   <img src="img/img-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса Кваст">
                 </p>
@@ -249,6 +226,7 @@
             </li>
           </ul>
         </section>
+        </div>
       </div>
     </main>
 
@@ -260,9 +238,9 @@
           <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты:</h2>
             <span>NЁRDS DESIGN STUDIO</span>
-            <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+            <p class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
             <p class="phone-number">тел. +7 (812) 275-75-75</p>
-            <a class="footer-contacts-button button" href="#">Напишите нам</a>
+            <a class="footer-contacts-button button" href="writeus.html">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -270,21 +248,21 @@
         <div class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="social-btn" href="#">
+              <a class="social-btn vk-btn" href="#">
                 <span class="visually-hidden">Вконтакте</span>
-                <img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте">
+                <p class="social-btn-icon"></p>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-btn" href="#">
+              <a class="social-btn fb-btn" href="#">
                 <span class="visually-hidden">Фейсбук</span>
-                <img src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук">
+                <p class="social-btn-icon"></p>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="social-btn" href="#">
+              <a class="social-btn insta-btn" href="#">
                 <span class="visually-hidden">Инстаграм</span>
-                <img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм">
+                <p class="social-btn-icon"></p>
               </a>
             </li>
           </ul>
@@ -297,7 +275,9 @@
     </footer>
 
     <div class="popup">
-      <button class="close-button" type="button"></button>
+      <button class="close-button" type="button">
+        <span class="visually-hidden">Закрыть форму</span>
+      </button>
       <h2>Напишите нам</h2>
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="popup-form-item">
